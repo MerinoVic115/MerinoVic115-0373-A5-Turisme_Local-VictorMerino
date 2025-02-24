@@ -107,6 +107,10 @@ h3{
     color: white;
 }
 
+.lugar>img{
+    width: 75%;
+}
+
 .centro1{
     display:table-column;
     width: 100%;
@@ -124,8 +128,16 @@ h3{
     color: white;
 }
 
-.lugar>img{
-    width: 50%;
+.lugar1>div>p{
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.lugar1>img{
+    width: 25%;
+   
     border-radius: 5px;
 }
 
@@ -148,4 +160,49 @@ footer{
      display:table-column;
     width: 100%;
 
+}
+
+
+@media (max-width: 700px){
+    header {
+        position: relative;
+        z-index: 900;
+    }
+    
+    .menu {
+        width: 100%;
+        height: auto;
+        top: calc(100px + 10px); /* Espacio debajo del header */
+        position: absolute;
+        text-align: center;
+        padding: 10px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 800;
+    }
+    .menu h3 {
+        display: none; /* Oculta el título "Menu" en móviles */
+    }
+
+    .menu a {
+        display: inline-block; /* Poner enlaces en línea */
+        margin: 0;
+        padding: 5px 10px;
+        background: #444;
+        border-radius: 5px;
+        font-size: 75%;
+    }
+
+    iframe{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .lugar1>div>p{
+        font-size: 75%;
+    }
 }
