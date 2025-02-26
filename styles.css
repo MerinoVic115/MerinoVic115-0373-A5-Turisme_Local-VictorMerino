@@ -1,10 +1,32 @@
+
+.titulo {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
 html{
     scroll-behavior: smooth;
 }
 
-img{
-    transform: scale(1.05);  /* Aumenta el tamaño del mapa al pasar el ratón */
-transition: transform 0.3s ease-in-out;
+#plantio{
+    width: 50%;
+}
+
+h1,h3,h4,.titulo{
+    
+    font-family: "Fugaz One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,a{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 5%;
 }
 
 .cabecera{
@@ -173,12 +195,31 @@ footer{
     padding: 15px;
 }
 
-.galeria{
-    
-     border: solid 5px rgb(238, 255, 0);
-     display:table-column;
-     width: 100%;
+.columna21 > .galeria > .div1,
+.columna21 > .galeria > .div2 {
+    display: flex;
+    justify-content: center;
+    gap: 5%; 
+    width: 100%;
+    flex-wrap: wrap; 
+}
 
+.columna21 > .galeria > .div1 > img,
+.columna21 > .galeria > .div2 > img {
+    border-radius: 5%;
+}
+
+.columna21 > .galeria > .div1 > img {
+    margin-top: 5%;
+    width: 30%;
+}
+
+.columna21 > .galeria > .div2 > img {
+    width: 30%;
+}
+
+.columna21 > .galeria > .div2 {
+    margin-top: 5%;
 }
 
 
@@ -204,13 +245,13 @@ footer{
         width: 75%;
     }
 
-    lugar1>div>p{
-        font-size: 50%;
+    .lugar1>div>p{
+        font-size: 75%;
     }
 
     .noticias>p{
         font-size: 75%;
-        text-align: justify;
+        
     }
 
     .noticias>img{
@@ -222,4 +263,31 @@ footer{
         padding-left: 12%;
     }
 
+    .columna21 > .galeria > .div1,
+    .columna21 > .galeria > .div2 {
+        display: column;
+        justify-content: center;
+        gap: 5%;
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+
+    .columna21 > .galeria > .div1 > img,
+    .columna21 > .galeria > .div2 > img {
+        border-radius: 5%;
+    }
+
+    .columna21 > .galeria > .div1 > img {
+        margin-top: 5%;
+        width: 70%;
+    }
+
+    .columna21 > .galeria > .div2 > img {
+        width: 70%;
+        
+    }
+
+    .columna21 > .galeria > .div2 {
+        margin-top: 5%;
+    }
 }
